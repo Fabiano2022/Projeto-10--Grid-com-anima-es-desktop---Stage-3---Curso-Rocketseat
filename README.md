@@ -18,7 +18,7 @@ Desafio realizado no STAGE 3 no curso Rocketseat/Ensino de tecnologias WEB/ Curs
 <br>
 
 <p align="center">
-  <img alt="PROJETO MOBILE FIRST/DESKTOP" src="https://raw.githubusercontent.com/gist/Fabiano2022/eb8f705a8a7c571253e8dd74d044d52a/raw/cb664dfe2f9f8524e59e6dc9c3e41cfa19d8641d/imagem%20space%20cream.svg" width="100%">
+  <img alt="PROJETO MOBILE FIRST/DESKTOP"      src="https://raw.githubusercontent.com/gist/Fabiano2022/eb8f705a8a7c571253e8dd74d044d52a/raw/cb664dfe2f9f8524e59e6dc9c3e41cfa19d8641d/imagem%20space%20cream.svg"  width="50%">
 </p>
 
 ## 🚀 Tecnologias
