@@ -1,4 +1,4 @@
-<h1 align="center"> MOBILE FIRST/DESKTOP </h1>
+<h1 align="center"> MOBILE FIRST/DESKTOP / GRID </h1>
 
 <p align="center">
 Desafio realizado no STAGE 3 no curso Rocketseat/Ensino de tecnologias WEB/ Curso Explorer / Turma 6 / Aula Avançando com CSS.
