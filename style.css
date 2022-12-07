@@ -1,0 +1,291 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62,5%;
+
+    --fontfamily-box: 'Staatliches', cursive;
+    --fontfamily-text:'Palanquin', sans-serif;
+
+    --background-primary: #d2d4eb;
+    --background-header1: #8E9AAF;
+    --background-header2:  #CBC0D3;
+}
+body {
+    /* background: #eee9e9; */
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
+.page {
+    max-width: 38.4rem;
+    margin: 0 auto;
+
+    background: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    height: 27.9rem;
+    background: var(--background-header1);     
+} 
+
+header img {
+    margin: 3.2rem auto 4rem;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.70));
+    height: 13.7rem;        
+}
+
+header h1 {
+    background: var(--background-header2);
+    height: 4.9rem;        
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.45);
+    font-family: var(--fontfamily-box);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+main {
+    background: var(--background-primary);
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;             
+
+    color: #23053A;
+    
+    margin-bottom: 6rem;
+}
+
+main img {
+    width: 100%;
+    height: auto;              
+}
+
+.card {
+    margin-bottom: 3.5rem;
+    position: relative;
+    animation-name: downtotop;
+    animation-duration: 700ms;
+}
+
+.card img {
+    max-width: 32rem;
+    border-radius: 2rem;
+    object-fit: cover;         
+}
+
+.card h2 {
+    position: absolute;
+    top: 1.6rem;
+    right: 2rem;
+
+    font-family: var(--fontfamily-box);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+
+    background: #FEEAFA;
+    border-radius: 2rem;
+    width: 11.2rem;
+    height: 3.5rem;
+
+    letter-spacing: 0.05em;
+
+    color: #4A4E69;
+
+    animation-name: downtotop;
+    animation-duration: 700ms;
+}
+
+
+header p {
+    display: none;
+}
+
+/* ----------------Animação ---------------*/
+
+@keyframes downtotop {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100% {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+
+
+ /*----------DESKTOP-------------------*/
+
+ @media (max-width: 700px) {
+    .card.desktop, footer {
+
+        display: none;           
+    }  
+ }
+ 
+ 
+ @media (min-width: 700px) {
+    .page { 
+        max-width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header main"
+        "header footer";
+
+        grid-template-columns: 1fr 3fr;  
+    }
+
+    .page header {
+        grid-area: header;
+        height: 100%;  
+    }
+
+   .page main {
+        width: 100%;
+        grid-area: main;
+    }
+
+    .page footer {
+        width: 100%;
+        grid-area: footer;
+
+    }
+
+    main .wrapper {
+        display: grid;
+        gap: 2rem;
+        grid-template-areas: 
+        'A B C'
+        'D B F'
+        'D E F';
+        
+    }
+
+    .wrapper .A{
+        grid-area: A;
+         
+    }
+
+    .wrapper .B{
+        grid-area: B;
+        
+    }
+
+    .wrapper .C{
+        grid-area: E;
+          
+    }
+
+    .wrapper .D{
+        grid-area: D;
+          
+    }
+
+    .wrapper .E{
+        grid-area: C;
+          
+    }
+
+    .wrapper .F{
+        grid-area: F;
+          
+    }
+
+    .wrapper .card{
+        margin: 0;
+    }
+
+    .wrapper img {
+        border-radius: 20px;
+    }
+    
+    main h1 {
+        display: none;
+    }
+
+    .card h2 {
+        display: none;
+    }
+
+    header {
+        
+    }
+
+    header img {
+        width: 214.47px;
+        height: 167px;
+        margin: 32px auto 32px;      
+    }
+
+    header h1 {
+        font-family: 'Staatliches';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 34px;
+
+        color: #FFFFFF;
+       
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        
+                
+    }
+
+    header p {
+        
+        margin: 32px;           
+                
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        font-family: 'Roboto';             
+        font-size: 24px;
+        line-height: 20px;
+
+        color: #FFFFFF;              
+    }
+
+    main {
+        background: #FFFFFF;
+    }
+
+    footer {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        
+        text-align: center;
+        
+        color: #4A4E69;
+        margin-top: 50px;       
+    }
+
+ }
