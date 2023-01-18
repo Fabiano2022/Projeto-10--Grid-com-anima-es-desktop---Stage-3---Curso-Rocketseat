@@ -36,10 +36,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Esse foi um desafio lançado pelo curso onde tivemos que colocar em prática tudo que foi visto no Stage 3 / Aula Avançando com CSS. A ideia agora é criar o Space Cream na versão para Desktop utilizando como base o projeto feito anteriormente no Mobile First . 
 No desafio utilizamos:
 
-- mobile first;
-- unidade de medidas flexível;
 - Grid;
+- Animações e transições;
 - Media queries.
+
 
 ## 🔖 Layout
 
